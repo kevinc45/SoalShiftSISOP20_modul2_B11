@@ -98,8 +98,37 @@ Cukup panjang dan membingungkan? Tenang saja! Bisa dicermati satu-persatu, kok!
 **1 : FUNGSI DAEMON**
 ```c
 
+static void daemonize(){
+pid_t pid, sid;        // Variabel untuk menyimpan PID
+
+  pid = fork();     // Menyimpan PID dari Child Process
+
+  /* Keluar saat fork gagal
+  * (nilai variabel pid < 0) */
+  if (pid < 0) {
+    exit(EXIT_FAILURE);
+  }
+
+  /* Keluar saat fork berhasil
+  * (nilai variabel pid adalah PID dari child process) */
+  if (pid > 0) {
+    exit(EXIT_SUCCESS);
+  }
+
+  umask(0);
+
+  sid = setsid();
+  if (sid < 0) {
+    exit(EXIT_FAILURE);
+  }
+
+  close(STDIN_FILENO);
+  close(STDOUT_FILENO);
+  close(STDERR_FILENO);
+}
 ```
+Penjelasan lengkap mengenai Daemon dapat kalian baca [di link berikut](https://github.com/AZakyH/sisop-modul-2). Selebihnya, menurut sumber Wikipedia
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA3MTkxNzc1LC0xMjM2Mjc1NjcsNzIyMj
+eyJoaXN0b3J5IjpbNTM5MjczMjc1LC0xMjM2Mjc1NjcsNzIyMj
 k0MTc5XX0=
 -->
