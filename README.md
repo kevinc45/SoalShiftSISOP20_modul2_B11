@@ -128,10 +128,10 @@ pid_t pid, sid;        // Variabel untuk menyimpan PID
 }
 ```
 Penjelasan lengkap mengenai Daemon dapat kalian baca [di link berikut](https://github.com/AZakyH/sisop-modul-2). Selebihnya, menurut sumber [Wikipedia](https://en.wikipedia.org/wiki/Daemon_(computing)),
-``
-	Daemon adalah 
-``
+```
+Daemon adalah program komputer yang berjalan sebagai background process, dibanding harus berada dalam kontrol langsung oleh pengguna secara interaktif.
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzY5NjQ0MzAsLTEyMzYyNzU2Nyw3Mj
-IyOTQxNzldfQ==
+eyJoaXN0b3J5IjpbMTcyOTE5Mzc4MCwtMTIzNjI3NTY3LDcyMj
+I5NDE3OV19
 -->
