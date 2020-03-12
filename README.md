@@ -19,8 +19,10 @@ e. Tidak boleh menggunakan fungsi system()
 Contoh: ./program \* 34 7 /home/somi/test.sh
 Program dengan argumen seperti contoh di atas akan menjalankan script test.sh setiap detik pada jam 07:34.
 
+## **Solution!**
+Hmm, suatu program cron tanpa cron? Seharusnya bukan masalah.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1MDIyMTUzMiwtMTIzNjI3NTY3LDcyMj
-I5NDE3OV19
+eyJoaXN0b3J5IjpbMjcwMTk4MTI4LC0xMjM2Mjc1NjcsNzIyMj
+k0MTc5XX0=
 -->
