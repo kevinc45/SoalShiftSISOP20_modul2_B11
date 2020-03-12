@@ -131,8 +131,8 @@ Penjelasan lengkap mengenai Daemon dapat kalian baca [di link berikut](https://g
 ```
 Daemon adalah program komputer yang berjalan sebagai background process, dibanding harus berada dalam kontrol langsung oleh pengguna secara interaktif.
 ```  
-Saat masuk ke progr
+Saat masuk ke program, kamu pasti mendapati ada yang aneh di bagian *int main*. Yap, **argc** dan **argv**! Sebagai **penerima informasi dari *command line* menuju program
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0OTE5NzQ5NCwtMTIzNjI3NTY3LDcyMj
+eyJoaXN0b3J5IjpbLTgwNjc5MzQ0NSwtMTIzNjI3NTY3LDcyMj
 I5NDE3OV19
 -->
