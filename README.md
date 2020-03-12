@@ -21,8 +21,13 @@ Program dengan argumen seperti contoh di atas akan menjalankan script test.sh se
 
 ## **Solution!**
 Hmm, suatu program cron tanpa cron? Seharusnya bukan masalah.
+  
+Karena soal nomor 1  merupakan suatu kesatuan, lebih baik kita lihat langsung program lengkapnya.
 
+```c
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjcwMTk4MTI4LC0xMjM2Mjc1NjcsNzIyMj
+eyJoaXN0b3J5IjpbMzM1MjAyNDc5LC0xMjM2Mjc1NjcsNzIyMj
 k0MTc5XX0=
 -->
