@@ -16,9 +16,11 @@ b. Program akan mengeluarkan pesan error jika argumen yang diberikan tidak sesua
 c. Program hanya menerima 1 config cron  
 d. Program berjalan di background (daemon)  
 e. Tidak boleh menggunakan fungsi system()  
-<br/>
 Contoh: ./program \* 34 7 /home/somi/test.sh
 Program dengan argumen seperti contoh di atas akan menjalankan script test.sh setiap detik pada jam 07:34.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzYyNzU2Nyw3MjIyOTQxNzldfQ==
+eyJoaXN0b3J5IjpbMTY1MDIyMTUzMiwtMTIzNjI3NTY3LDcyMj
+I5NDE3OV19
 -->
