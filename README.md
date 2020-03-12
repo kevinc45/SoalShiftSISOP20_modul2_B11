@@ -127,8 +127,11 @@ pid_t pid, sid;        // Variabel untuk menyimpan PID
   close(STDERR_FILENO);
 }
 ```
-Penjelasan lengkap mengenai Daemon dapat kalian baca [di link berikut](https://github.com/AZakyH/sisop-modul-2). Selebihnya, menurut sumber Wikipedia
+Penjelasan lengkap mengenai Daemon dapat kalian baca [di link berikut](https://github.com/AZakyH/sisop-modul-2). Selebihnya, menurut sumber [Wikipedia](https://en.wikipedia.org/wiki/Daemon_(computing)),
+``
+	Daemon adalah 
+``
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM5MjczMjc1LC0xMjM2Mjc1NjcsNzIyMj
-k0MTc5XX0=
+eyJoaXN0b3J5IjpbLTExMzY5NjQ0MzAsLTEyMzYyNzU2Nyw3Mj
+IyOTQxNzldfQ==
 -->
