@@ -132,7 +132,7 @@ Penjelasan lengkap mengenai Daemon dapat kalian baca [di link berikut](https://g
 Daemon adalah program komputer yang berjalan sebagai background process, dibanding harus berada dalam kontrol langsung oleh pengguna secara interaktif.
 ```  
 <br/>  
-
+  
 **2: ARGC & ARGV**
 ```c
 int main (int argc, char *argv[])
@@ -187,8 +187,11 @@ Menurut situs [tutorialpoint.com](https://www.tutorialspoint.com/c_standard_libr
 ```
 Fungsi ini me-return integral value yang telah dikonversi sebagai int.
 ```
-Potongan kode tersebut diperlukan untuk memudahkan perbandingan, apakah *input* yang diberikan oleh *user* berisi *asterisk* atau bukan. Apabila bukan, maka array of
+Potongan kode tersebut diperlukan untuk memudahkan perbandingan, apakah *input* yang diberikan oleh *user* berisi *asterisk* atau bukan. Apabila bukan, maka *array of char* yang didapat melalui **argv** akan dikonversikan ke dalam *int*.  
+  <br/>
+  
+**3: CURRENT TIME**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA5MTE0ODQsLTE0ODE1NjEwNjYsLTEyMz
-YyNzU2Nyw3MjIyOTQxNzldfQ==
+eyJoaXN0b3J5IjpbNTYyOTYyOTMwLC0xNDgxNTYxMDY2LC0xMj
+M2Mjc1NjcsNzIyMjk0MTc5XX0=
 -->
