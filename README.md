@@ -187,8 +187,8 @@ Menurut situs [tutorialpoint.com](https://www.tutorialspoint.com/c_standard_libr
 ```
 Fungsi ini me-return integral value yang telah dikonversi sebagai int.
 ```
-Potongan kode tersebut diperlukan untuk memudahkan dalam mel
+Potongan kode tersebut diperlukan untuk memudahkan perbandingan, apakah *input* yang diberikan oleh *user* berisi *asterisk* atau bukan. Apabila bukan, maka array of
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODczODU2ODAsLTE0ODE1NjEwNjYsLT
-EyMzYyNzU2Nyw3MjIyOTQxNzldfQ==
+eyJoaXN0b3J5IjpbODA5MTE0ODQsLTE0ODE1NjEwNjYsLTEyMz
+YyNzU2Nyw3MjIyOTQxNzldfQ==
 -->
