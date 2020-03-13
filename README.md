@@ -187,8 +187,8 @@ Menurut situs [tutorialpoint.com](https://www.tutorialspoint.com/c_standard_libr
 ```
 Fungsi ini me-return integral value yang telah dikonversi sebagai int.
 ```
-Potongan kode tersebut diperlukan karena tidak ada string comparis
+Potongan kode tersebut diperlukan untuk memudahkan dalam mel
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ5NTY3OTgzLC0xNDgxNTYxMDY2LC0xMj
-M2Mjc1NjcsNzIyMjk0MTc5XX0=
+eyJoaXN0b3J5IjpbLTE1ODczODU2ODAsLTE0ODE1NjEwNjYsLT
+EyMzYyNzU2Nyw3MjIyOTQxNzldfQ==
 -->
