@@ -205,8 +205,12 @@ if (fork()==0)execl("/bin/bash", "bash", argv[argc-1], NULL);}
 sleep(1);
 }
 ```
-Program ini akan melakukan pengecekan tiap detik, apakah waktu sekarang sama dengan waktu yang diminta oleh *user* (mirip seperti cara kerja **cron**). Oleh karena itu, *condition* yang terdapat di dalam ***if*** bernilai *true* apabia
+Program ini akan melakukan pengecekan tiap detik, apakah waktu sekarang sama dengan waktu yang diminta oleh *user* (mirip seperti cara kerja **cron**). Oleh karena itu, *condition* yang terdapat di dalam ***if*** bernilai *true* apabila:
+1. Waktunya sesuai dengan waktu sekarang, atau
+2. *User* meng-*input* **asterisk ( * )**.
+
+Pemberian *value* terhadap 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzODc3NzEzNCwtMTQ4MTU2MTA2NiwtMT
+eyJoaXN0b3J5IjpbMjAxMzIwNjU2NiwtMTQ4MTU2MTA2NiwtMT
 IzNjI3NTY3LDcyMjI5NDE3OV19
 -->
