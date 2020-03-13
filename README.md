@@ -213,8 +213,10 @@ Pemberian *value* ulang terhadap variabel **t** dan **tm** dilakukan agar progra
   
 Bagaimana dengan ***if (fork( ) == 0)*** ?
 Fungsi **```execl```** akan membuat program berakhir saat selesai berjalan. Kita tidak ingin itu terjadi karena harusnya program kita tetap berjalan hingga *user* melakukan ***kill***.
-Jadi, penggunaan *fork* ter
+Jadi, penggunaan *fork* tersebut diperlukan agar fungsi **```execl```** berjalan dan menyelesaikan *process child* saja.
+
+**```sleep (1)```** digunakan untuk mengatur agar *program
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5MTAyMDg2MCwtMTQ4MTU2MTA2NiwtMT
-IzNjI3NTY3LDcyMjI5NDE3OV19
+eyJoaXN0b3J5IjpbODk3NTU4MTcwLC0xNDgxNTYxMDY2LC0xMj
+M2Mjc1NjcsNzIyMjk0MTc5XX0=
 -->
