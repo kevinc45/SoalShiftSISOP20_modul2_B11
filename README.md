@@ -233,3 +233,115 @@ Hal tersebut dapat terlihat apabila **argc** tidak bernilai 5.
 eyJoaXN0b3J5IjpbMTI2NjAyMzk1NywtMTQ4MTU2MTA2NiwtMT
 IzNjI3NTY3LDcyMjI5NDE3OV19
 -->
+
+
+#Pembahasan soal 3
+
+>Jaya adalah seorang programmer handal mahasiswa informatika. Suatu hari dia
+memperoleh tugas yang banyak dan berbeda tetapi harus dikerjakan secara bersamaan
+(multiprocessing).
+a. Program buatan jaya harus bisa membuat dua direktori di
+“/home/[USER]/modul2/”. Direktori yang pertama diberi nama “indomie”, lalu
+lima detik kemudian membuat direktori yang kedua bernama “sedaap”.
+b. Kemudian program tersebut harus meng-ekstrak file jpg.zip di direktori
+“/home/[USER]/modul2/”. Setelah tugas sebelumnya selesai, ternyata tidak
+hanya itu tugasnya.
+c. Diberilah tugas baru yaitu setelah di ekstrak, hasil dari ekstrakan tersebut (di
+dalam direktori “home/[USER]/modul2/jpg/”) harus dipindahkan sesuai dengan
+pengelompokan, semua file harus dipindahkan ke
+“/home/[USER]/modul2/sedaap/” dan semua direktori harus dipindahkan ke
+“/home/[USER]/modul2/indomie/”.
+d. Untuk setiap direktori yang dipindahkan ke “/home/[USER]/modul2/indomie/”
+harus membuat dua file kosong. File yang pertama diberi nama “coba1.txt”, lalu
+3 detik kemudian membuat file bernama “coba2.txt”.
+(contoh : “/home/[USER]/modul2/indomie/{nama_folder}/coba1.txt”).
+Karena Jaya terlalu banyak tugas dia jadi stress, jadi bantulah Jaya agar bisa membuat
+program tersebut.
+
+#**Solution!**
+
+
+```
+#include <stdlib.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <stdio.h>
+
+int main() {
+  pid_t child_id1,child_id2;
+
+  child_id1 = fork();
+
+/*  if (child_id1 < 0) {
+    exit(EXIT_FAILURE);
+  }*/
+
+  if (child_id1 == 0) {
+    // this is child
+	if (child_id2 = fork() == 0){
+    char *argv[] = {"mkdir", "/home/fyan/Modul2/indomie", NULL};
+    execv("/bin/mkdir", argv);
+}
+
+ 	 if (child_id2 = fork() == 0) {
+    //this is parents
+	sleep(5);// memberi jeda 5 detik untuk membuat direktori sedaap setelah indomie
+    char *argv[] = {"mkdir", "/home/fyan/Modul2/sedaap", NULL};
+    execv("/bin/mkdir", argv);
+  }
+}
+
+
+
+	if (child_id2 = fork() == 0){
+	sleep(6); //memberi jeda 1 detik setelah membuat direktori sedaap
+char *exec[] = {"unzip", "/home/fyan/Modul2/jpg.zip", NULL};
+execv("/usr/bin/unzip",exec);
+}
+
+
+
+return 0;
+
+}
+
+```
+
+#A ##Membuat derektori indomie kemudian membuat direktori sedaap dengan perbedaan waktu selama 5 detik 
+``` 
+char *argv[] = {"mkdir", "/home/fyan/Modul2/indomie", NULL};
+    execv("/bin/mkdir", argv);
+    
+    sleep(5);// memberi jeda 5 detik untuk membuat direktori sedaap setelah indomie
+    
+ char *argv[] = {"mkdir", "/home/fyan/Modul2/sedaap", NULL};
+    execv("/bin/mkdir", argv);
+```
+Program diatas adalah adalah program saya untuk menjalankan mkdir menggunakan exec
+dimana syntax argument 
+``` argv[n] = { {your-program-name}, {argument[1]}, {argument[2]},.....,{argument[n-2]}, NULL }```
+dengan menuliskan nama program mkdir yang bertujuan untuk membuat direktori baru, kemudian kita isi tempat dimana 
+kita create direktori sedaap dan indomie terssebut, setelah itu kita akhiri dengan NULL untuk memberi tau agar argument di dalatelah selesai.
+
+Setelah itu kita eksekusi menggunakan exec ` execv("/bin/mkdir", argv);`
+dimana kita dapat mengetahui bahwa mkdir eksekusi itu berada di /bin/mkdir ?
+dengan cara mengetikkan whereis mkdir di terminal, nanti ada keterangan yang akan muncul
+
+
+#B ##Meng-ekstrak file jpg yang telah di download 
+
+```sleep(6); //memberi jeda 1 detik setelah membuat direktori sedaap
+char *exec[] = {"unzip", "/home/fyan/Modul2/jpg.zip", NULL};
+execv("/usr/bin/unzip",exec);
+```
+Seperti yang kasus yang ada di 3(a) dengan meng-ekstrak jgp.zip menggunakan exec dan fork
+dengan cara kita beri argument dulu ```char *exec[] = {"unzip", "/home/fyan/Modul2/jpg.zip", NULL};```
+yang berisi unzip kemudian lokasi file zip itu di-ekstrak , lalu NULL untuk memberi bahwa argument didalamnya telah selesai.
+Eksekusi command unzip sendiri terletak di /usr/bin/unzip
+Untuk mengetahuinya ketikkan whereis unzip di terminal, nanti ada penjelasannya.
+
+sleep(6) itu buat apa? agar mkdir indomie dan unzip jpg.zip tidak dieksekusi bebarengan ( selisih 1 detik )
+
+#CdanD 
+belum selesai 
