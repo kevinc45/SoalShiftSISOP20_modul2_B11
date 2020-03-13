@@ -171,8 +171,9 @@ argc
 `myprog.c`
 ```
 
-**argv** merupakan *pointer* 
+**argv** merupakan *array* yang berisikan *pointer of char*,
+dalam penerapannya, **argv** dapat dipanggil seperti *two-dimens
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMzk5OTMxLC0xNDgxNTYxMDY2LC0xMj
+eyJoaXN0b3J5IjpbNjQ4Nzk2NjM3LC0xNDgxNTYxMDY2LC0xMj
 M2Mjc1NjcsNzIyMjk0MTc5XX0=
 -->
