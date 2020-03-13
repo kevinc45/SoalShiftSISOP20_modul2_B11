@@ -220,8 +220,16 @@ Jadi, penggunaan *fork* tersebut diperlukan agar fungsi **```execl```** berjalan
 <br/>
   
 **5: INVALID INPUT**
-Untuk mengantisipasi *user* yang salah melakukan *input*, 
+Untuk mengantisipasi *user* yang salah memasukkan *input* sesuai dengan jumlah argumen yang diminta, diberikan:
+```c
+if (argc != 5) {
+printf ("Invalid input\n");
+return 0;
+}
+``` 
+sebagai pendeteksi apakah jumlah *input* yang diberikan *user* tidak sama persis dengan jumlah *input* yang diminta.
+Hal tersebut dapat terlihat apabila **argc** tidak bernilai 5.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMDI2MjI1LC0xNDgxNTYxMDY2LC0xMj
-M2Mjc1NjcsNzIyMjk0MTc5XX0=
+eyJoaXN0b3J5IjpbMTI2NjAyMzk1NywtMTQ4MTU2MTA2NiwtMT
+IzNjI3NTY3LDcyMjI5NDE3OV19
 -->
