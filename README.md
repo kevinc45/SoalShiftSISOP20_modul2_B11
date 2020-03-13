@@ -191,8 +191,10 @@ Potongan kode tersebut diperlukan untuk memudahkan perbandingan, apakah *input* 
   <br/>
   
 **3: CURRENT TIME**
-Dengan menggunakan fungsi **```time()```** dan **```localtime()```** dalam *library* **```<time.h>```**, kita dapat menemukan waktu lokal tempat kita berada sekaran
+Dengan menggunakan fungsi **```time()```** dan **```localtime()```** dalam *library* **```<time.h>```**, kita dapat menemukan waktu lokal tempat kita berada sekarang.
+
+Pendefinisian 'detik', 'menit', dan 'jam' dengan *value* **-1** dilakukan agar inputan *asterisk* yang diberikan oleh *user* dapat denga
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg4NzE4MDY1LC0xNDgxNTYxMDY2LC0xMj
+eyJoaXN0b3J5IjpbLTgwNzU2OTg0LC0xNDgxNTYxMDY2LC0xMj
 M2Mjc1NjcsNzIyMjk0MTc5XX0=
 -->
