@@ -215,8 +215,8 @@ Bagaimana dengan ***if (fork( ) == 0)*** ?
 Fungsi **```execl```** akan membuat program berakhir saat selesai berjalan. Kita tidak ingin itu terjadi karena harusnya program kita tetap berjalan hingga *user* melakukan ***kill***.
 Jadi, penggunaan *fork* tersebut diperlukan agar fungsi **```execl```** berjalan dan menyelesaikan *process child* saja.
 
-**```sleep (1)```** digunakan untuk mengatur agar *program
+**```sleep (1)```** digunakan untuk mengatur agar fungsi *while* berjalan setiap satu detik.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk3NTU4MTcwLC0xNDgxNTYxMDY2LC0xMj
+eyJoaXN0b3J5IjpbNDM2MjIyNzkwLC0xNDgxNTYxMDY2LC0xMj
 M2Mjc1NjcsNzIyMjk0MTc5XX0=
 -->
