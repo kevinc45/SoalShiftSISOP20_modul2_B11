@@ -212,8 +212,9 @@ Program ini akan melakukan pengecekan tiap detik, apakah waktu sekarang sama den
 Pemberian *value* ulang terhadap variabel **t** dan **tm** dilakukan agar program tetap *update* perihal *current time* meski sedang berada di dalam ***while***.
   
 Bagaimana dengan ***if (fork( ) == 0)*** ?
-Fungsi **```execl```** akan membuat program s
+Fungsi **```execl```** akan membuat program berakhir saat selesai berjalan. Kita tidak ingin itu terjadi karena harusnya program kita tetap berjalan hingga *user* melakukan ***kill***.
+Jadi, penggunaan *fork* ter
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1MTA0MzI5LC0xNDgxNTYxMDY2LC0xMj
-M2Mjc1NjcsNzIyMjk0MTc5XX0=
+eyJoaXN0b3J5IjpbLTY5MTAyMDg2MCwtMTQ4MTU2MTA2NiwtMT
+IzNjI3NTY3LDcyMjI5NDE3OV19
 -->
