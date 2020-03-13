@@ -180,8 +180,11 @@ if (argv[3][0] != '*') jam = atoi(argv[3]);
 ``` 
   
 Potongan *code* di atas menunjukkan bahwa kita ingin mendeteksi *char* apa yang terdapat di kolom [1], [2], atau [3], di urutan ke-[0] atau pertama.
-*Code* tersebut difungsikan untuk mengubah simbol **asterisk( * )** menjadi *integer value* melalui fungsi **atoi( )**
+*Code* tersebut difungsikan untuk mengubah simbol **asterisk( * )** menjadi *integer value* melalui fungsi **atoi( )**.
+
+*Apa yang dilakukan oleh fungsi atoi( )?*
+Menurut situs[tutorialpoint.com](https://www.tutorialspoint.com/c_standard_library/c_function_atoi.htm)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzOTE0NTkwMSwtMTQ4MTU2MTA2NiwtMT
-IzNjI3NTY3LDcyMjI5NDE3OV19
+eyJoaXN0b3J5IjpbNjQ2MzMwNjUxLC0xNDgxNTYxMDY2LC0xMj
+M2Mjc1NjcsNzIyMjk0MTc5XX0=
 -->
