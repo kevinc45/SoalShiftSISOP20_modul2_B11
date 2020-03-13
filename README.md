@@ -209,8 +209,8 @@ Program ini akan melakukan pengecekan tiap detik, apakah waktu sekarang sama den
 1. Waktunya sesuai dengan waktu sekarang, atau
 2. *User* meng-*input* **asterisk ( * )**.
 
-Pemberian *value* terhadap 
+Pemberian *value* ulang terhadap variabel **t** dan **tm** dilakukan 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMzIwNjU2NiwtMTQ4MTU2MTA2NiwtMT
-IzNjI3NTY3LDcyMjI5NDE3OV19
+eyJoaXN0b3J5IjpbLTIxMzI2NjAyODcsLTE0ODE1NjEwNjYsLT
+EyMzYyNzU2Nyw3MjIyOTQxNzldfQ==
 -->
