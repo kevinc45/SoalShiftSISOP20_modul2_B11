@@ -171,9 +171,16 @@ argc
 `myprog.c`
 ```
 
-**argv** merupakan *array* yang berisikan *pointer of char*,
-dalam penerapannya, **argv** dapat dipanggil seperti *two-dimens
+**argv** merupakan *array* yang berisikan *pointer of char*, dalam penerapannya, **argv** dapat dipanggil seperti *two-dimensional array*. Contohnya juga terdapat di dalam *solution code* berupa:
+
+```c
+if (argv[1][0] != '*') detik = atoi(argv[1]);
+if (argv[2][0] != '*') menit = atoi(argv[2]);
+if (argv[3][0] != '*') jam = atoi(argv[3]);
+```
+<br/>  
+Potongan *code* di atas menunjukkan bahwa kita ingin mendeteksi 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ4Nzk2NjM3LC0xNDgxNTYxMDY2LC0xMj
-M2Mjc1NjcsNzIyMjk0MTc5XX0=
+eyJoaXN0b3J5IjpbMjA3MjMzNjcxMSwtMTQ4MTU2MTA2NiwtMT
+IzNjI3NTY3LDcyMjI5NDE3OV19
 -->
