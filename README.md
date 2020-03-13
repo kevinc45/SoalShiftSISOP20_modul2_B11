@@ -193,8 +193,20 @@ Potongan kode tersebut diperlukan untuk memudahkan perbandingan, apakah *input* 
 **3: CURRENT TIME**
 Dengan menggunakan fungsi **```time()```** dan **```localtime()```** dalam *library* **```<time.h>```**, kita dapat menemukan waktu lokal tempat kita berada sekarang.
 
-Pendefinisian 'detik', 'menit', dan 'jam' dengan *value* **-1** dilakukan agar inputan *asterisk* yang diberikan oleh *user* dapat denga
+Pendefinisian 'detik', 'menit', dan 'jam' dengan *value* **-1** dilakukan agar inputan *asterisk* yang diberikan oleh *user* dapat dengan mudah dideteksi karena sudah bernilai *default* sebesar **-1**.
+
+**4: THE MAIN PROGRAM**
+```c
+while (1){
+t = time(NULL);
+tm = *localtime(&t);
+if ((tm.tm_hour == jam || jam == -1) && (tm.tm_min == menit || menit == -1) && (tm.tm_sec == detik || detik == -1)) {
+if (fork()==0)execl("/bin/bash", "bash", argv[argc-1], NULL);}
+sleep(1);
+}
+```
+Program ini akan melakukan pengecekan tiap detik, apakah 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwNzU2OTg0LC0xNDgxNTYxMDY2LC0xMj
-M2Mjc1NjcsNzIyMjk0MTc5XX0=
+eyJoaXN0b3J5IjpbMTY0NTkwNjEzNywtMTQ4MTU2MTA2NiwtMT
+IzNjI3NTY3LDcyMjI5NDE3OV19
 -->
