@@ -208,9 +208,12 @@ sleep(1);
 Program ini akan melakukan pengecekan tiap detik, apakah waktu sekarang sama dengan waktu yang diminta oleh *user* (mirip seperti cara kerja **cron**). Oleh karena itu, *condition* yang terdapat di dalam ***if*** bernilai *true* apabila:
 1. Waktunya sesuai dengan waktu sekarang, atau
 2. *User* meng-*input* **asterisk ( * )**.
-
+  
 Pemberian *value* ulang terhadap variabel **t** dan **tm** dilakukan agar program tetap *update* perihal *current time* meski sedang berada di dalam ***while***.
+  
+Bagaimana dengan ***if (fork( ) == 0)*** ?
+Fungsi **```execl```** akan membuat program s
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3MjMyMTY5MSwtMTQ4MTU2MTA2NiwtMT
-IzNjI3NTY3LDcyMjI5NDE3OV19
+eyJoaXN0b3J5IjpbMTc1MTA0MzI5LC0xNDgxNTYxMDY2LC0xMj
+M2Mjc1NjcsNzIyMjk0MTc5XX0=
 -->
