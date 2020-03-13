@@ -177,10 +177,11 @@ argc
 if (argv[1][0] != '*') detik = atoi(argv[1]);
 if (argv[2][0] != '*') menit = atoi(argv[2]);
 if (argv[3][0] != '*') jam = atoi(argv[3]);
-```
-<br/>  
-Potongan *code* di atas menunjukkan bahwa kita ingin mendeteksi 
+``` 
+  
+Potongan *code* di atas menunjukkan bahwa kita ingin mendeteksi *char* apa yang terdapat di kolom [1], [2], atau [3], di urutan ke-[0] atau pertama.
+*Code* tersebut difungsikan untuk meng
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3MjMzNjcxMSwtMTQ4MTU2MTA2NiwtMT
+eyJoaXN0b3J5IjpbLTQyNzcyODU5NCwtMTQ4MTU2MTA2NiwtMT
 IzNjI3NTY3LDcyMjI5NDE3OV19
 -->
