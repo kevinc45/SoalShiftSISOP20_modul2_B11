@@ -235,7 +235,7 @@ IzNjI3NTY3LDcyMjI5NDE3OV19
 -->
 
 
-#Pembahasan soal 3
+# Pembahasan soal 3
 
 >Jaya adalah seorang programmer handal mahasiswa informatika. Suatu hari dia
 memperoleh tugas yang banyak dan berbeda tetapi harus dikerjakan secara bersamaan
@@ -308,7 +308,8 @@ return 0;
 
 ```
 
-#A ##Membuat derektori indomie kemudian membuat direktori sedaap dengan perbedaan waktu selama 5 detik 
+## A 
+**Membuat derektori indomie kemudian membuat direktori sedaap dengan perbedaan waktu selama 5 detik** 
 ``` 
 char *argv[] = {"mkdir", "/home/fyan/Modul2/indomie", NULL};
     execv("/bin/mkdir", argv);
@@ -329,7 +330,8 @@ dimana kita dapat mengetahui bahwa mkdir eksekusi itu berada di /bin/mkdir ?
 dengan cara mengetikkan whereis mkdir di terminal, nanti ada keterangan yang akan muncul
 
 
-#B ##Meng-ekstrak file jpg yang telah di download 
+## B
+**Meng-ekstrak file jpg yang telah di download** 
 
 ```sleep(6); //memberi jeda 1 detik setelah membuat direktori sedaap
 char *exec[] = {"unzip", "/home/fyan/Modul2/jpg.zip", NULL};
@@ -343,5 +345,5 @@ Untuk mengetahuinya ketikkan whereis unzip di terminal, nanti ada penjelasannya.
 
 sleep(6) itu buat apa? agar mkdir indomie dan unzip jpg.zip tidak dieksekusi bebarengan ( selisih 1 detik )
 
-#CdanD 
-belum selesai 
+## C dan D 
+Belum Berhasil  
