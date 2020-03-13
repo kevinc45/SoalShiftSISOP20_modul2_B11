@@ -170,7 +170,9 @@ argc
 
 `myprog.c`
 ```
+
+**argv** merupakan *pointer* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyNTkwMzY4MCwtMTQ4MTU2MTA2NiwtMT
-IzNjI3NTY3LDcyMjI5NDE3OV19
+eyJoaXN0b3J5IjpbMTUxMzk5OTMxLC0xNDgxNTYxMDY2LC0xMj
+M2Mjc1NjcsNzIyMjk0MTc5XX0=
 -->
