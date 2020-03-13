@@ -183,8 +183,12 @@ Potongan *code* di atas menunjukkan bahwa kita ingin mendeteksi *char* apa yang 
 *Code* tersebut difungsikan untuk mengubah simbol **asterisk( * )** menjadi *integer value* melalui fungsi **atoi( )**.
 
 *Apa yang dilakukan oleh fungsi atoi( )?*
-Menurut situs[tutorialpoint.com](https://www.tutorialspoint.com/c_standard_library/c_function_atoi.htm)
+Menurut situs [tutorialpoint.com](https://www.tutorialspoint.com/c_standard_library/c_function_atoi.htm),
+```
+Fungsi ini me-return integral value yang telah dikonversi sebagai int.
+```
+Potongan kode tersebut diperlukan karena tidak ada string comparis
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ2MzMwNjUxLC0xNDgxNTYxMDY2LC0xMj
+eyJoaXN0b3J5IjpbMjQ5NTY3OTgzLC0xNDgxNTYxMDY2LC0xMj
 M2Mjc1NjcsNzIyMjk0MTc5XX0=
 -->
