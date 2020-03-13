@@ -191,8 +191,8 @@ Potongan kode tersebut diperlukan untuk memudahkan perbandingan, apakah *input* 
   <br/>
   
 **3: CURRENT TIME**
-Dengan menggunakan fungsi **time ( )** dan *localtime ( )*
+Dengan menggunakan fungsi **```time()```** dan **```localtime()```** dalam *library* **```<time.h>```**, kita dapat menemukan waktu lokal tempat kita berada sekaran
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNzY4ODA3MywtMTQ4MTU2MTA2NiwtMT
-IzNjI3NTY3LDcyMjI5NDE3OV19
+eyJoaXN0b3J5IjpbNDg4NzE4MDY1LC0xNDgxNTYxMDY2LC0xMj
+M2Mjc1NjcsNzIyMjk0MTc5XX0=
 -->
