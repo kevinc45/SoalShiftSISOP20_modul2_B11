@@ -306,6 +306,8 @@ Agar program dapat dihentikan, diperlukan file ```killer.sh``` yang berjalan ses
 prctl(PR_SET_PDEATHSIG, SIGHUP);
 ```
 
+Sementara untuk membuat program ```killer.sh```, kita dapat menggunakan ***C Files I/O*** seperti biasa (fungsi fopen( ) dan fclose( )). 
+
 
 # Pembahasan soal 3
 
@@ -420,6 +422,6 @@ sleep(6) itu buat apa? agar mkdir indomie dan unzip jpg.zip tidak dieksekusi beb
 ## C dan D 
 Belum Berhasil  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI3ODEwNzY0LDkzOTU1MDM0MSw1NDExOT
-M1NzMsLTQzMDU2OTk4MSw5MDEwMzM3OTBdfQ==
+eyJoaXN0b3J5IjpbLTIwNzE5NTU4MTIsOTM5NTUwMzQxLDU0MT
+E5MzU3MywtNDMwNTY5OTgxLDkwMTAzMzc5MF19
 -->
