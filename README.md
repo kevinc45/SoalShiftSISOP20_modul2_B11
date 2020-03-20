@@ -301,7 +301,10 @@ Setelah itu, kita tinggal menjalankan proses ```execl``` dengan isi ```/usr/bin/
   
 **e.  Kiwa menambahkan bahwa program utama bisa dirun dalam dua mode, yaitu MODE_A dan MODE_B. untuk mengaktifkan MODE_A, program harus dijalankan dengan argumen -a. Untuk MODE_B, program harus dijalankan dengan argumen -b. Ketika dijalankan dalam MODE_A, program utama akan langsung menghentikan semua operasinya ketika program killer dijalankan. Untuk MODE_B, ketika program killer dijalankan, program utama akan berhenti tapi membiarkan proses di setiap folder yang masih berjalan sampai selesai(semua folder terisi gambar, terzip lalu di delete).**
 
-Agar program dapat dihentikan, diperlukan file ```killer.sh``` yang berjalan sesuai dengan *input* argumen yang diberikan oleh user
+Agar program dapat dihentikan, diperlukan file ```killer.sh``` yang berjalan sesuai dengan *input* argumen yang diberikan oleh *user*. Apabila yang dijalankan adalah **MODE_A**, maka kita dapat menggunakan
+```c
+prctl(PR_SET_PDEATHSIG, SIGHUP);
+```
 
 
 # Pembahasan soal 3
@@ -417,6 +420,6 @@ sleep(6) itu buat apa? agar mkdir indomie dan unzip jpg.zip tidak dieksekusi beb
 ## C dan D 
 Belum Berhasil  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzMDg2MjQ2OCw5Mzk1NTAzNDEsNTQxMT
-kzNTczLC00MzA1Njk5ODEsOTAxMDMzNzkwXX0=
+eyJoaXN0b3J5IjpbNDI3ODEwNzY0LDkzOTU1MDM0MSw1NDExOT
+M1NzMsLTQzMDU2OTk4MSw5MDEwMzM3OTBdfQ==
 -->
