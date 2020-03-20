@@ -455,7 +455,8 @@ Untuk mengetahuinya ketikkan whereis unzip di terminal, nanti ada penjelasannya.
 
 sleep(6) itu buat apa? agar mkdir indomie dan unzip jpg.zip tidak dieksekusi bebarengan ( selisih 1 detik )
 
-## C pengecekkan dari semua hasil ekstrak jpg.zip untuk memisahkan antara file dan direktori
+## C 
+**pengecekkan dari semua hasil ekstrak jpg.zip untuk memisahkan antara file dan direktori**
 ```hasil dari ekstrakan tersebut (di
 dalam direktori “home/[USER]/modul2/jpg/”) harus dipindahkan sesuai dengan
 pengelompokan, semua file harus dipindahkan ke
@@ -521,7 +522,8 @@ closedir(dir);
 
 
 ## D
-Belum Berhasil  
+**Belum Berhasil dengan Kendala** 
+dikarenakan pas run pada saat touch coba1.txt dan coba2.txt di dalam folder Modul2 juga ke bentuk coba1.txt dan coba2.txt  
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbOTE2MTUwODMwLDkzOTU1MDM0MSw1NDExOT
 M1NzMsLTQzMDU2OTk4MSw5MDEwMzM3OTBdfQ==
