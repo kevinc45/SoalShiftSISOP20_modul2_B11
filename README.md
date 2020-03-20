@@ -292,7 +292,7 @@ Tentu saja karena gambarnya di-*download* setiap 5 detik, kita akan menggunakan 
 **Agar rapi, setelah sebuah folder telah terisi oleh 20 gambar, folder akan di zip dan folder akan di delete(sehingga hanya menyisakan .zip).**  
   
 Sebelum kita dapat melakukan *zip* pada folder, kita perlu menunggu agar proses yang berjalan dalam folder (proses *download*) selesai terlebih dahulu.
-Hal yang
+Hal yang sama kita lakukan untuk
 
 # Pembahasan soal 3
 
@@ -407,6 +407,6 @@ sleep(6) itu buat apa? agar mkdir indomie dan unzip jpg.zip tidak dieksekusi beb
 ## C dan D 
 Belum Berhasil  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjQyNDExODEsLTQzMDU2OTk4MSw5MD
-EwMzM3OTBdfQ==
+eyJoaXN0b3J5IjpbLTM2MjYwOTg2NiwtNDMwNTY5OTgxLDkwMT
+AzMzc5MF19
 -->
