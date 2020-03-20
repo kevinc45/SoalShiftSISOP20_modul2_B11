@@ -278,7 +278,10 @@ execl("/bin/mkdir", "mkdir", currenttime, NULL);
 Program lalu di-```sleep(30)``` agar berjalan setiap 30 detik.
 
 ## B
-**
+**Tiap-tiap folder lalu diisi dengan 20 gambar yang di download dari
+https://picsum.photos/, dimana tiap gambar di download setiap 5 detik. Tiap gambar berbentuk persegi dengan ukuran (t%1000)+100 piksel dimana t adalah detik Epoch Unix. Gambar tersebut diberi nama dengan format timestamp [YYYY-mm-dd_HH:ii:ss].**
+  
+Di mo
 
 # Pembahasan soal 3
 
@@ -393,6 +396,6 @@ sleep(6) itu buat apa? agar mkdir indomie dan unzip jpg.zip tidak dieksekusi beb
 ## C dan D 
 Belum Berhasil  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzE0NjA2NiwtNDMwNTY5OTgxLDkwMT
-AzMzc5MF19
+eyJoaXN0b3J5IjpbMjY3NTgwNjM3LC00MzA1Njk5ODEsOTAxMD
+MzNzkwXX0=
 -->
