@@ -283,7 +283,9 @@ https://picsum.photos/, dimana tiap gambar di download setiap 5 detik. Tiap gamb
   
 Di modul yang pertama, kami telah belajar untuk menggunakan ```wget``` dan kami akan menggunakan cara yang sama untuk men-*download* foto-foto ini.
 
-Menggunakan ```sprintf```, kami memiliki 2 *array* yang berisi *timestamp* dan *link* lengkap dari situs 
+Menggunakan ```sprintf```, kami memiliki 2 *array* yang berisi *timestamp* dan *link* lengkap dari situs https://picsum.photos/ yang mau di-*download*.
+  
+Karena kita hanya butuh 20 gambar, kita akan melakukan *looping* sebanyak 20 kali s
 
 # Pembahasan soal 3
 
@@ -398,6 +400,6 @@ sleep(6) itu buat apa? agar mkdir indomie dan unzip jpg.zip tidak dieksekusi beb
 ## C dan D 
 Belum Berhasil  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxMzc0NTUyNywtNDMwNTY5OTgxLDkwMT
+eyJoaXN0b3J5IjpbLTE2NjMwNDIzNiwtNDMwNTY5OTgxLDkwMT
 AzMzc5MF19
 -->
