@@ -347,3 +347,6 @@ sleep(6) itu buat apa? agar mkdir indomie dan unzip jpg.zip tidak dieksekusi beb
 
 ## C dan D 
 Belum Berhasil  
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE0MTk5MjQ1NjhdfQ==
+-->
