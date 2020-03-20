@@ -254,6 +254,10 @@ Buatlah program dalam mimpi Kiwa jadi nyata!
 >- Gunakan fitur picsum.photos untuk mendapatkan gambar dengan ukuran tertentu
 >- Epoch Unix bisa didapatkan dari time()
 
+## **Solution!**
+Wah, Kiwa! Kamu menyusahkan saja, ya?
+Tidak perlu khawatir karena permasalahannya berhasil terpe
+
 # Pembahasan soal 3
 
 >Jaya adalah seorang programmer handal mahasiswa informatika. Suatu hari dia
@@ -277,7 +281,7 @@ harus membuat dua file kosong. File yang pertama diberi nama “coba1.txt”, la
 Karena Jaya terlalu banyak tugas dia jadi stress, jadi bantulah Jaya agar bisa membuat
 program tersebut.
 
-#**Solution!**
+## **Solution!**
 
 
 ```
@@ -367,5 +371,5 @@ sleep(6) itu buat apa? agar mkdir indomie dan unzip jpg.zip tidak dieksekusi beb
 ## C dan D 
 Belum Berhasil  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTAxMDMzNzkwXX0=
+eyJoaXN0b3J5IjpbLTE0MjM0NjA4NDEsOTAxMDMzNzkwXX0=
 -->
