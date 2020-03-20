@@ -281,7 +281,9 @@ Program lalu di-```sleep(30)``` agar berjalan setiap 30 detik.
 **Tiap-tiap folder lalu diisi dengan 20 gambar yang di download dari
 https://picsum.photos/, dimana tiap gambar di download setiap 5 detik. Tiap gambar berbentuk persegi dengan ukuran (t%1000)+100 piksel dimana t adalah detik Epoch Unix. Gambar tersebut diberi nama dengan format timestamp [YYYY-mm-dd_HH:ii:ss].**
   
-Di mo
+Di modul yang pertama, kami telah belajar untuk menggunakan ```wget``` dan kami akan menggunakan cara yang sama untuk men-*download* foto-foto ini.
+
+Menggunakan ```sprintf```, kami memiliki 2 *array* yang berisi *timestamp* dan *link* lengkap dari situs 
 
 # Pembahasan soal 3
 
@@ -396,6 +398,6 @@ sleep(6) itu buat apa? agar mkdir indomie dan unzip jpg.zip tidak dieksekusi beb
 ## C dan D 
 Belum Berhasil  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY3NTgwNjM3LC00MzA1Njk5ODEsOTAxMD
-MzNzkwXX0=
+eyJoaXN0b3J5IjpbLTMxMzc0NTUyNywtNDMwNTY5OTgxLDkwMT
+AzMzc5MF19
 -->
