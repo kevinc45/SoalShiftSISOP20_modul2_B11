@@ -245,13 +245,14 @@ e. Kiwa menambahkan bahwa program utama bisa dirun dalam dua mode, yaitu MODE_A 
 
 >Kiwa lalu terbangun dan sedih karena menyadari programnya hanya sebuah mimpi.
 Buatlah program dalam mimpi Kiwa jadi nyata!
-Catatan:
-- Tidak boleh memakai system().
-- Program utama harus ter-detach dari terminal
-Hint:
-- Gunakan fitur picsum.photos untuk mendapatkan gambar dengan ukuran
-tertentu
-- Epoch Unix bisa didapatkan dari time()
+
+>Catatan:
+>- Tidak boleh memakai system().
+>- Program utama harus ter-detach dari terminal
+
+>Hint:
+>- Gunakan fitur picsum.photos untuk mendapatkan gambar dengan ukuran tertentu
+>- Epoch Unix bisa didapatkan dari time()
 
 # Pembahasan soal 3
 
@@ -366,5 +367,5 @@ sleep(6) itu buat apa? agar mkdir indomie dan unzip jpg.zip tidak dieksekusi beb
 ## C dan D 
 Belum Berhasil  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI0MTU5ODYwXX0=
+eyJoaXN0b3J5IjpbOTAxMDMzNzkwXX0=
 -->
