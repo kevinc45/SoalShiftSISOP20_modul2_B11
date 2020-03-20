@@ -263,7 +263,11 @@ Soal nomor 2 sebenarnya agak rumit karena harus menggerakkan beberapa child seka
 ## A
 **Pertama-tama, Kiwa membuat sebuah folder khusus, di dalamnya dia membuat sebuah program C yang per 30 detik membuat sebuah folder dengan nama timestamp [YYYY-mm-dd_HH:ii:ss].**
 
-Terlihat mudah? Yap, untuk membuat sebuah folder baru, kita dapat menggunakan fungsi
+Terlihat mudah? Yap, pertama-tama, kita harus mengambil waktu saat program dijalankan. Kurang lebih caranya hampir sama dengan nomor 1.
+Bedanya, disini kita perlu mengubahnya dalam format timestamp [YYYY-mm-dd_HH:ii:ss].
+Untuk melakukan hal tersebut, kami menggunakan ```sp
+
+untuk membuat sebuah folder baru, kita dapat menggunakan fungsi
 ```c
 execl("/bin/mkdir", "mkdir", currenttime, NULL);
 ```
@@ -381,5 +385,5 @@ sleep(6) itu buat apa? agar mkdir indomie dan unzip jpg.zip tidak dieksekusi beb
 ## C dan D 
 Belum Berhasil  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyNDgyMDU0Myw5MDEwMzM3OTBdfQ==
+eyJoaXN0b3J5IjpbLTEyNjk1MjM2ODMsOTAxMDMzNzkwXX0=
 -->
