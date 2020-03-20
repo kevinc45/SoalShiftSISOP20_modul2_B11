@@ -256,7 +256,9 @@ Buatlah program dalam mimpi Kiwa jadi nyata!
 
 ## **Solution!**
 Wah, Kiwa! Kamu menyusahkan saja, ya?
-Tidak perlu khawatir karena permasalahannya berhasil diselesaikan (walaupun harus berkorban jam tidur)
+Tidak perlu khawatir karena permasalahannya berhasil diselesaikan (walaupun harus berkorban jam tidur).
+  
+Soal nomor 2 sebenarnya agak rumit 
 
 # Pembahasan soal 3
 
@@ -371,5 +373,5 @@ sleep(6) itu buat apa? agar mkdir indomie dan unzip jpg.zip tidak dieksekusi beb
 ## C dan D 
 Belum Berhasil  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzMwNzYzMjcsOTAxMDMzNzkwXX0=
+eyJoaXN0b3J5IjpbLTEzMzIyODQ1MDYsOTAxMDMzNzkwXX0=
 -->
