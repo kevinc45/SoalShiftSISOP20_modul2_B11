@@ -286,6 +286,10 @@ Di modul yang pertama, kami telah belajar untuk menggunakan ```wget``` dan kami 
 Menggunakan ```sprintf```, kami memiliki 2 *array* yang berisi *timestamp* dan *link* lengkap dari situs https://picsum.photos/ yang mau di-*download*.
   
 Karena kita hanya butuh 20 gambar, kita akan melakukan *looping* sebanyak 20 kali untuk keseluruhan proses.
+Tentu saja karena gambarnya di-*download* setiap 5 detik, kita akan menggunakan ```sleep(5)```.
+
+## C
+****
 
 # Pembahasan soal 3
 
@@ -400,6 +404,6 @@ sleep(6) itu buat apa? agar mkdir indomie dan unzip jpg.zip tidak dieksekusi beb
 ## C dan D 
 Belum Berhasil  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5NDUwMTk5MywtNDMwNTY5OTgxLDkwMT
+eyJoaXN0b3J5IjpbMTY3NzM0NDUzNCwtNDMwNTY5OTgxLDkwMT
 AzMzc5MF19
 -->
