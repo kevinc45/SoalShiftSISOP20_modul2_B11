@@ -336,48 +336,84 @@ program tersebut.
 
 
 ```
-#include <stdlib.h>
-#include <sys/types.h>
-#include <unistd.h>
-#include <sys/types.h>
 #include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
+#include <time.h>
+#include <wait.h>
+#include <unistd.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <syslog.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <dirent.h>
 
-int main() {
+int main(){
   pid_t child_id1,child_id2;
 
   child_id1 = fork();
 
-/*  if (child_id1 < 0) {
-    exit(EXIT_FAILURE);
-  }*/
-
-  if (child_id1 == 0) {
-    // this is child
-	if (child_id2 = fork() == 0){
-    char *argv[] = {"mkdir", "/home/fyan/Modul2/indomie", NULL};
-    execv("/bin/mkdir", argv);
-}
-
- 	 if (child_id2 = fork() == 0) {
-    //this is parents
-	sleep(5);// memberi jeda 5 detik untuk membuat direktori sedaap setelah indomie
-    char *argv[] = {"mkdir", "/home/fyan/Modul2/sedaap", NULL};
-    execv("/bin/mkdir", argv);
+  if(child_id1 == 0){
+    if(child_id2 = fork() == 0){
+      char *argv[] = {"mkdir","/home/fyan/Modul2/indomie",NULL};
+      execv("/bin/mkdir",argv);
+    }
+    sleep(5);
+    if(child_id2 = fork() == 0){
+      char *argv[] = {"mkdir","/home/fyan/Modul2/sedaap",NULL};
+      execv("/bin/mkdir",argv);
+    }
+    if(child_id2 = fork() == 0){
+      chdir("/home/fyan/Modul2");
+      char *exc[] = {"unzip","jpg.zip",NULL};
+      execv("/usr/bin/unzip",exc);
+    }
   }
-}
 
 
 
-	if (child_id2 = fork() == 0){
-	sleep(6); //memberi jeda 1 detik setelah membuat direktori sedaap
-char *exec[] = {"unzip", "/home/fyan/Modul2/jpg.zip", NULL};
-execv("/usr/bin/unzip",exec);
-}
-
-
-
+sleep(1);
+struct dirent *der;
+DIR *dir = opendir("/home/fyan/Modul2/jpg");
+if(dir == NULL)
+{
 return 0;
+}
 
+while((der = readdir(dir))!= NULL)
+{
+	
+	char filepath[100];
+	struct stat typestat;
+		strcpy(filepath,"/home/fyan/Modul2/jpg/");
+		strcat(filepath,der->d_name);
+		printf("%s \n",filepath);
+		if(stat(filepath,&typestat) == 0)
+		{
+			if(typestat.st_mode & S_IFDIR)
+			{
+				if(child_id1 = fork() == 0)
+				{
+					char *argv[] = {"mv",filepath,"/home/fyan/Modul2/indomie",NULL};
+					execv("/bin/mv",argv);
+				}
+			}
+			else if (typestat.st_mode & S_IFREG)
+			{
+				
+				if (child_id1 = fork() == 0)
+				{
+					char *argv[] = {"mv",filepath,"/home/fyan/Modul2/sedaap",NULL};
+					execv("/bin/mv",argv);
+				}
+			}
+		}
+	
+
+}
+closedir(dir);
 }
 
 ```
@@ -419,7 +455,7 @@ Untuk mengetahuinya ketikkan whereis unzip di terminal, nanti ada penjelasannya.
 
 sleep(6) itu buat apa? agar mkdir indomie dan unzip jpg.zip tidak dieksekusi bebarengan ( selisih 1 detik )
 
-## C dan 
+## C pengecekkan dari semua hasil ekstrak jpg.zip untuk memisahkan antara file dan direktori
 ```hasil dari ekstrakan tersebut (di
 dalam direktori “home/[USER]/modul2/jpg/”) harus dipindahkan sesuai dengan
 pengelompokan, semua file harus dipindahkan ke
@@ -427,8 +463,61 @@ pengelompokan, semua file harus dipindahkan ke
 “/home/[USER]/modul2/indomie/”.
 ```
 Dalam kasus ini saya melakukan pengecekkan dari semua hasil ekstrak jpg.zip untuk memisahkan antara file dan direktori .
+Pertama-tama saya menggunakan user command DIR yang berfungsi untuk mendaftar informasi tentang FILE (direktori saat ini secara default) dan Sortir entri menurut abjad, untuk lebih lengkapnya bisa di cek di man dir di terminal.
+
+```
+struct dirent *der;
+DIR *dir = opendir("/home/fyan/Modul2/jpg");
 ```
 
+Kemudian setelah itu melakukan pengecekkan terlebih dahulu untuk memriksa didalam folder jpg ada isinya atau tidak
+```
+if(dir == NULL)
+{
+return 0;
+}
+```
+
+Sehabis itu jika ada isinya code itu akan akan melakukan looping sampai tidak ada file dan direktori yang ada di folder jpg
+```
+while((der = readdir(dir))!= NULL)
+
+```
+
+Kemudian kita memasuki sebuah pengecekan dengan tujuan untuk membedakkan mana direktori dan file yang disimpan di variabel filepath
+kemudian untuk perintah move nyasendiri kita menggunakan exec yang ada di child_id1
+
+```
+char filepath[100];
+	struct stat typestat;
+		strcpy(filepath,"/home/fyan/Modul2/jpg/");
+		strcat(filepath,der->d_name);
+		printf("%s \n",filepath);
+		if(stat(filepath,&typestat) == 0)
+		{
+			if(typestat.st_mode & S_IFDIR)
+			{
+				if(child_id1 = fork() == 0)
+				{
+					char *argv[] = {"mv",filepath,"/home/fyan/Modul2/indomie",NULL};
+					execv("/bin/mv",argv);
+				}
+			}
+			else if (typestat.st_mode & S_IFREG)
+			{
+				
+				if (child_id1 = fork() == 0)
+				{
+					char *argv[] = {"mv",filepath,"/home/fyan/Modul2/sedaap",NULL};
+					execv("/bin/mv",argv);
+				}
+			}
+		}
+	
+
+}
+closedir(dir);
+```
 
 
 ## D
