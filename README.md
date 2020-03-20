@@ -260,7 +260,13 @@ Tidak perlu khawatir karena permasalahannya berhasil diselesaikan (walaupun haru
   
 Soal nomor 2 sebenarnya agak rumit karena harus menggerakkan beberapa child sekaligus. Sama halnya dengan nomor 1, kita akan menggunakan daemon untuk membuat program berjalan di *background*.
   
-## a
+## A
+**Pertama-tama, Kiwa membuat sebuah folder khusus, di dalamnya dia membuat sebuah program C yang per 30 detik membuat sebuah folder dengan nama timestamp [YYYY-mm-dd_HH:ii:ss].**
+
+Terlihat mudah? Yap, untuk membuat sebuah folder baru, kita dapat menggunakan fungsi
+```c
+execl("/bin/mkdir", "mkdir", currenttime, NULL);
+```
 
 # Pembahasan soal 3
 
@@ -375,5 +381,5 @@ sleep(6) itu buat apa? agar mkdir indomie dan unzip jpg.zip tidak dieksekusi beb
 ## C dan D 
 Belum Berhasil  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Mzg1OTc0NTUsOTAxMDMzNzkwXX0=
+eyJoaXN0b3J5IjpbMTYyNDgyMDU0Myw5MDEwMzM3OTBdfQ==
 -->
