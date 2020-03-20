@@ -265,7 +265,10 @@ Soal nomor 2 sebenarnya agak rumit karena harus menggerakkan beberapa child seka
 
 Terlihat mudah? Yap, pertama-tama, kita harus mengambil waktu saat program dijalankan. Kurang lebih caranya hampir sama dengan nomor 1.
 Bedanya, disini kita perlu mengubahnya dalam format timestamp [YYYY-mm-dd_HH:ii:ss].
-Untuk melakukan hal tersebut, kami menggunakan ```sp
+Untuk melakukan hal tersebut, kami menggunakan ```sprintf``` seperti dalam potongan kode berikut:
+```c
+sprintf(currenttime, "%d-%02d-%02d_%02d:%02d:%02d", tm.tm_year+1900, tm.tm_mon+1, tm.tm_mday, tm.tm_hour, tm.tm_min, tm.tm_sec);
+```
 
 untuk membuat sebuah folder baru, kita dapat menggunakan fungsi
 ```c
@@ -385,5 +388,5 @@ sleep(6) itu buat apa? agar mkdir indomie dan unzip jpg.zip tidak dieksekusi beb
 ## C dan D 
 Belum Berhasil  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjk1MjM2ODMsOTAxMDMzNzkwXX0=
+eyJoaXN0b3J5IjpbLTE2MzcwNTY4MjQsOTAxMDMzNzkwXX0=
 -->
