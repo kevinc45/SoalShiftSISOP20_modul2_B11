@@ -296,7 +296,8 @@ Hal yang sama kita lakukan saat akan men-*delete* folder yang sudah selesai di-*
 
 Setelah itu, kita tinggal menjalankan proses ```execl``` dengan isi ```/usr/bin/zip``` dan ```/bin/rm```.
 
-D
+## D
+
 
 # Pembahasan soal 3
 
@@ -411,6 +412,6 @@ sleep(6) itu buat apa? agar mkdir indomie dan unzip jpg.zip tidak dieksekusi beb
 ## C dan D 
 Belum Berhasil  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MDI3OTYzMyw1NDExOTM1NzMsLTQzMD
-U2OTk4MSw5MDEwMzM3OTBdfQ==
+eyJoaXN0b3J5IjpbOTM5NTUwMzQxLDU0MTE5MzU3MywtNDMwNT
+Y5OTgxLDkwMTAzMzc5MF19
 -->
