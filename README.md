@@ -258,7 +258,9 @@ Buatlah program dalam mimpi Kiwa jadi nyata!
 Wah, Kiwa! Kamu menyusahkan saja, ya?
 Tidak perlu khawatir karena permasalahannya berhasil diselesaikan (walaupun harus berkorban jam tidur).
   
-Soal nomor 2 sebenarnya agak rumit 
+Soal nomor 2 sebenarnya agak rumit karena harus menggerakkan beberapa child sekaligus. Sama halnya dengan nomor 1, kita akan menggunakan daemon untuk membuat program berjalan di *background*.
+  
+## a
 
 # Pembahasan soal 3
 
@@ -373,5 +375,5 @@ sleep(6) itu buat apa? agar mkdir indomie dan unzip jpg.zip tidak dieksekusi beb
 ## C dan D 
 Belum Berhasil  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzIyODQ1MDYsOTAxMDMzNzkwXX0=
+eyJoaXN0b3J5IjpbLTE0Mzg1OTc0NTUsOTAxMDMzNzkwXX0=
 -->
