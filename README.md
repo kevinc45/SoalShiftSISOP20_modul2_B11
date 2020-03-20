@@ -234,6 +234,9 @@ eyJoaXN0b3J5IjpbMTI2NjAyMzk1NywtMTQ4MTU2MTA2NiwtMT
 IzNjI3NTY3LDcyMjI5NDE3OV19
 -->
 
+# Pembahasan soal 2
+>
+
 
 # Pembahasan soal 3
 
@@ -348,5 +351,5 @@ sleep(6) itu buat apa? agar mkdir indomie dan unzip jpg.zip tidak dieksekusi beb
 ## C dan D 
 Belum Berhasil  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTk5MjQ1NjhdfQ==
+eyJoaXN0b3J5IjpbLTIwNTQ4MTU3MDBdfQ==
 -->
