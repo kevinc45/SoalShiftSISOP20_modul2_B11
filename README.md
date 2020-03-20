@@ -294,7 +294,7 @@ Tentu saja karena gambarnya di-*download* setiap 5 detik, kita akan menggunakan 
 Sebelum kita dapat melakukan *zip* pada folder, kita perlu menunggu agar proses yang berjalan dalam folder (proses *download*) selesai terlebih dahulu.
 Hal yang sama kita lakukan saat akan men-*delete* folder yang sudah selesai di-*zip*.  Oleh karena itu, kami akan menggunakan ```while(wait(&status)>0)``` agar proses di *child* berakhir terlebih dahulu.
 
-Setelah itu, kita tinggal menjalankan proses 
+Setelah itu, kita tinggal menjalankan proses ```execl```
 
 # Pembahasan soal 3
 
@@ -409,6 +409,6 @@ sleep(6) itu buat apa? agar mkdir indomie dan unzip jpg.zip tidak dieksekusi beb
 ## C dan D 
 Belum Berhasil  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTM4MTQxMzIsNTQxMTkzNTczLC00Mz
+eyJoaXN0b3J5IjpbLTE1NTU4NzM4MDMsNTQxMTkzNTczLC00Mz
 A1Njk5ODEsOTAxMDMzNzkwXX0=
 -->
