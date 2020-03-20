@@ -269,7 +269,7 @@ Untuk melakukan hal tersebut, kami menggunakan ```sprintf``` seperti dalam poton
 ```c
 sprintf(currenttime, "%d-%02d-%02d_%02d:%02d:%02d", tm.tm_year+1900, tm.tm_mon+1, tm.tm_mday, tm.tm_hour, tm.tm_min, tm.tm_sec);
 ```
-Fungsi ```sprintf``` akan memasukkan string yang terdapat dalam argumen ke
+Fungsi ```sprintf``` akan memasukkan string yang terdapat dalam argumen ke-2 
 
 untuk membuat sebuah folder baru, kita dapat menggunakan fungsi
 ```c
@@ -389,5 +389,6 @@ sleep(6) itu buat apa? agar mkdir indomie dan unzip jpg.zip tidak dieksekusi beb
 ## C dan D 
 Belum Berhasil  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzMDU2OTk4MSw5MDEwMzM3OTBdfQ==
+eyJoaXN0b3J5IjpbLTU0MjQwNzgzOCwtNDMwNTY5OTgxLDkwMT
+AzMzc5MF19
 -->
