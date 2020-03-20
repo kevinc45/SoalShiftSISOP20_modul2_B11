@@ -269,12 +269,16 @@ Untuk melakukan hal tersebut, kami menggunakan ```sprintf``` seperti dalam poton
 ```c
 sprintf(currenttime, "%d-%02d-%02d_%02d:%02d:%02d", tm.tm_year+1900, tm.tm_mon+1, tm.tm_mday, tm.tm_hour, tm.tm_min, tm.tm_sec);
 ```
-Fungsi ```sprintf``` akan memasukkan string yang terdapat dalam argumen ke-2 
+Fungsi ```sprintf``` akan memasukkan string yang terdapat dalam argumen ke-2 (dalam hal ini *timestamp*), ke dalam *array* ```currenttime```.
 
-untuk membuat sebuah folder baru, kita dapat menggunakan fungsi
+Untuk membuat sebuah folder baru, kita dapat menggunakan fungsi
 ```c
 execl("/bin/mkdir", "mkdir", currenttime, NULL);
 ```
+Program lalu di-```sleep(30)``` agar berjalan setiap 30 detik.
+
+## B
+**
 
 # Pembahasan soal 3
 
@@ -389,6 +393,6 @@ sleep(6) itu buat apa? agar mkdir indomie dan unzip jpg.zip tidak dieksekusi beb
 ## C dan D 
 Belum Berhasil  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0MjQwNzgzOCwtNDMwNTY5OTgxLDkwMT
+eyJoaXN0b3J5IjpbLTE5MzE0NjA2NiwtNDMwNTY5OTgxLDkwMT
 AzMzc5MF19
 -->
