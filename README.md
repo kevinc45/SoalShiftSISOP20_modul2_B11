@@ -525,6 +525,6 @@ closedir(dir);
 **Belum Berhasil dengan Kendala** 
 dikarenakan pas run pada saat touch coba1.txt dan coba2.txt di dalam folder Modul2 juga ke bentuk coba1.txt dan coba2.txt  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE2MTUwODMwLDkzOTU1MDM0MSw1NDExOT
-M1NzMsLTQzMDU2OTk4MSw5MDEwMzM3OTBdfQ==
+eyJoaXN0b3J5IjpbLTY0MjgwODIsOTM5NTUwMzQxLDU0MTE5Mz
+U3MywtNDMwNTY5OTgxLDkwMTAzMzc5MF19
 -->
